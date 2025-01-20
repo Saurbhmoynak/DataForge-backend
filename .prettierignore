@@ -1,0 +1,11 @@
+# This file specifies files and directories that Prettier should ignore. It works similarly to .gitignore.
+
+# The .prettierrc file is used to configure Prettier’s formatting rules. It allows you to customize how Prettier formats your code.
+
+/.vscode
+/node_modules
+./dist
+
+*.env
+.env
+.env.*
