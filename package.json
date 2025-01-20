@@ -1,0 +1,15 @@
+{
+  "name": "finalproject",
+  "version": "1.0.0",
+  "description": "full final project",
+  "keywords": [
+    "backend"
+  ],
+  "license": "ISC",
+  "author": "Saurbh Moynak",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
