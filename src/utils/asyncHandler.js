@@ -1,3 +1,4 @@
+//acts as a middleware wrapper for handling asynchronous functions in a Node.js/Express application. Its primary purpose is to catch and forward errors from asynchronous operations to the Express error-handling middleware, ensuring clean and concise code.
 const asyncHandler = (requestHandler) => {
   return (req, res, next) => {
     Promise.resolve(requestHandler(req,res,next)).catch((err)=>next(err))

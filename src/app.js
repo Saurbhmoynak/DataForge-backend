@@ -27,5 +27,20 @@ app.use(express.static("public"));
 app.use(cookieParser());
 
 // The app.use(cookieParser()); middleware in Express.js is used to parse cookies sent by the client in HTTP requests.It provides an easy way to access and manipulate cookies in your application.
+
+
+
+//routes import
+import userRouter from './routes/user.router.js'
+
+//routes declaration
+// app.use() is specifically designed to mount middleware or routers to a specific base path.
+
+// app.use("/users", userRouter)
+//Using a versioned base path like /api/v1 allows you to manage different versions of your API without breaking existing clients.
+app.use("/api/v1/users", userRouter)
+
+//here url will made as  http://localhost:8000/users/register If you defone api the http://localhost:8000//api/v1/users/register
+
   
 export { app };
