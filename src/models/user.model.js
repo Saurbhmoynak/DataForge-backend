@@ -46,8 +46,6 @@ const userSchema = new mongoose.Schema({
   }
 }, { timestamps: true })
 
-import bcrypt from "bcrypt";
-
 
 //pre-hook (middleware) in Mongoose that allows you to define logic that runs before a specific Mongoose method or event (e.g., save, validate, remove, find, etc.)
 

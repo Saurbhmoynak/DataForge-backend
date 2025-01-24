@@ -5,7 +5,7 @@ import { DB_NAME } from "../constants.js";
 const connectDB = async() => {
   try {
     //mongoose actually returns a object which contains connection instance(jisme hume connectionInstance se response milta hai)
-    const connectionInstance = await mongoose.connect(`${process.env.MONGODB_URL}/${DB_NAME}`)
+    const connectionInstance = await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
     console.log(`\n MongoDB connected !! DB HOST: ${connectionInstance.connection.host}`);
 
     //The connectionInstance.connection.host is a way to retrieve the host (hostname or IP address) of the database server to which your application is connected

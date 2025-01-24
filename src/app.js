@@ -31,7 +31,7 @@ app.use(cookieParser());
 
 
 //routes import
-import userRouter from './routes/user.router.js'
+import userRouter from './routes/user.route.js'
 
 //routes declaration
 // app.use() is specifically designed to mount middleware or routers to a specific base path.
